@@ -14,7 +14,7 @@ import javax.swing.JTextField;
  *
  */
 public class MaJFrame extends JFrame implements ActionListener  {
-	private JLabel monJLabel;
+	private JLabel monJLabel; 
 	private JTextField monJTextFiedl;
 	private JButton monJButton;
 	public void init(){
