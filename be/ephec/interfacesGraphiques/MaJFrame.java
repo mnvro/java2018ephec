@@ -19,7 +19,7 @@ public class MaJFrame extends JFrame implements ActionListener  {
 	private JButton monJButton;
 	public void init(){
 		this.setVisible(true);
-		this.setBounds(100,200,800,600);
+		
 		this.setTitle("Ma première fenêtre");
 		this.setDefaultCloseOperation(this.DISPOSE_ON_CLOSE);
 		this.monJLabel = new JLabel("Nom : ");
@@ -31,7 +31,9 @@ public class MaJFrame extends JFrame implements ActionListener  {
 		this.getContentPane().add(monJButton);
 		monJButton.addActionListener(this);
 		
-		this.pack();
+		this.setBounds(100,200,800,600);
+		
+		//this.pack();
 	}
 	public MaJFrame(){
 		init();
