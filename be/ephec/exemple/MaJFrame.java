@@ -33,7 +33,7 @@ public class MaJFrame extends JFrame implements MouseListener, ActionListener{
 	    this.getContentPane().add(monJTextFiedl);
 	    this.getContentPane().add(monJButtonOK);
 	    this.getContentPane().add(monJButtonCancel);
-	    this.setBounds(10,50,100,500);
+	    this.setBounds(10,50,300,250);
 	    monJLabel.addMouseListener(this);
 	    monJTextFiedl.addMouseListener(this);
 	    //this.pack();
@@ -41,28 +41,23 @@ public class MaJFrame extends JFrame implements MouseListener, ActionListener{
 	
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		System.out.println("on a cliqué");
-		
+		System.out.println("on a cliqué sur "+e.getSource().getClass().getSimpleName());
 	}
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		System.out.println("on est entré");
-		
+		System.out.println("on est entré dans "+e.getSource().getClass().getSimpleName());
 	}
 	@Override
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
 	}
 	@Override
 	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 	public static void main(String[] args) {
 		MaJFrame toto = new MaJFrame();
@@ -76,6 +71,7 @@ public class MaJFrame extends JFrame implements MouseListener, ActionListener{
 			break;
 		case "Cancel":
 			monJTextFiedl.setText("");
+			System.out.println("on a cliqué sur Cancel");
 			break;
 		}
 	}

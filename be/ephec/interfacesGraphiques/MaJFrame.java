@@ -31,7 +31,7 @@ public class MaJFrame extends JFrame implements ActionListener  {
 		this.getContentPane().add(monJButton);
 		monJButton.addActionListener(this);
 		
-		this.setBounds(100,200,800,600);
+		this.setBounds(100,200,400,200);
 		
 		//this.pack();
 	}
